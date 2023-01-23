@@ -75,7 +75,7 @@ export class FavoritesView extends Favorites {
         ".user img"
       ).src = `https://github.com/${user.login}.png`;
       row.querySelector(".user img").alt = `Image de ${user.name}`;
-      row.querySelector(".user p").href = `https://github.com/${user.name}`;
+      row.querySelector(".user a").href = `https://github.com/${user.name}`;
       row.querySelector(".user span").textContent = user.login;
       row.querySelector(".repositories").textContent = user.public_repos;
       row.querySelector(".followers").textContent = user.followers;
