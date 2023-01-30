@@ -76,7 +76,7 @@ export class FavoritesView extends Favorites {
       ).src = `https://github.com/${user.login}.png`;
       row.querySelector(".user img").alt = `Image de ${user.name}`;
       row.querySelector(".user a").href = `https://github.com/${user.name}`;
-      row.querySelector(".user p").textContent = user.login;
+      row.querySelector(".user p").textContent = user.name;
       row.querySelector(".user span").textContent = user.login;
       row.querySelector(".repositories").textContent = user.public_repos;
       row.querySelector(".followers").textContent = user.followers;
@@ -98,18 +98,18 @@ export class FavoritesView extends Favorites {
     tr.innerHTML = `
       <td class="user">
         <img
-          src="https://github.com/MayckonFer.png"
-          alt="Foto de usuário do github"
+          src=""
+          alt=""
         />
         <a href="https://github.com/MayckonFer" target="_blank">
-          <p>Mayckon Fernandes</p>
-          <span>/MayckonFer</span>
+          <p></p>
+          <span>/</span>
         </a>
       </td>
-      <td class="repositories">76</td>
-      <td class="followers">2000</td>
+      <td class="repositories"></td>
+      <td class="followers"></td>
       <td class="action-remove">
-        <button class="remove">Remover</button>
+        <button class="remove"></button>
       </td>
     `;
 
